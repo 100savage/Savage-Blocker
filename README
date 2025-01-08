@@ -1,11 +1,5 @@
-Package: savage-blocker
-Version: 1.0
-Architecture: all
-Essential: no
-Priority: optional
-Depends: zenity,wget
-Maintainer: Mike Savage
-Description: The Savage Blocker is more than just an ad-blocking tool.
+ The Savage Blocker is more than just an ad-blocking tool.
+ 
  It gathers a merged collection of malicious domain lists from various sources,
  including Steven Black, Malwaredomains, and other reputable sources. This tool
  enhances your online experience by protecting your privacy, saving you
