@@ -1,12 +1,16 @@
  The Savage Blocker is more than just an ad-blocking tool for Debian like Linux systems.
  
- This tool gathers a merged collection of malicious domain lists from various sources,
+   This tool gathers a merged collection of malicious domain lists from various sources,
  including Steven Black, Malwaredomains, and other reputable sources. This tool
  enhances your online experience by protecting your privacy, saving you bandwidth,
- speeding up web browsing, and reducing online nuisances. This tool lets you
- select verious types of websites to block.
+ speeding up web browsing, and reducing online nuisances. With The Savage Blocker,
+ you can surf the web without being distracted by ads or being tracked by advertisers.
+ It also helps protect your privacy by blocking known malicious domains. This means you
+ don't have to worry about your personal information being intercepted by these malicious
+ domains. This tool lets you select verious types of websites to block.
 
- Types of websites that you can blocked include:
+ The types of websites that you can blocked include:
+
  Ads and Malware websites
  Ransomware websites
  Tracking websites
@@ -15,8 +19,8 @@
  Social Media websites
  Prevent Bitcoin Miners from accessing your system
 
-You can select or de-select any of the above types of websites that you want blocked.
-This tool also lets you add any website of your choice to block. It also lets you
-to easily remove all website blocking if needed.
+ This tool allows you to block websites by category. You can select or deselect any of
+ the categories listed above. You can also add any website of your choice to block. If
+ you need to remove all website blocking, you can do that easily as well.
 
-The Savage Blocker is your ultimate web protection tool.
+ The Savage Blocker is your ultimate web protection tool.
