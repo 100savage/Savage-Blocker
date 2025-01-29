@@ -74,7 +74,7 @@ add_website() {
     website=$(zenity --entry --title="The Savage Spam Blocker: Your Ultimate Web Protection Tool!" --text="     Enter the full domain name of the website you want to block (e.g., example.com) \n     to prevent this computer from accessing the website.\n" --width=530 --height=150)
     answer=$?
     if [ "$answer" -eq 0 ]; then
-        echo "0.0.0.0 $website" >> $HOME/configuration/Hosts/extra
+        echo "0.0.0.0 $website" >> /usr/share/blocker/extra
         zenity --info --title="The Savage Spam Blocker: Your Ultimate Web Protection Tool!" --text="\nThe website has been added to the block list.\n" --width=530 --height=100 --timeout=2 --icon-name=dialog-information
     fi
     # Run the Launch The Savage Blocker selection after adding the website
@@ -94,6 +94,52 @@ add_website() {
 }
 
 # Function no blocked websites
+remove_domain() {
+# Get the domain to search for from the user using zenity
+    domain=$(zenity --entry --title="Remove a website that is blocked" --text "     Enter the full domain name of the website\n     you want to block (e.g., example.com)")
+
+# Check if the user entered any domain
+    if [[ -z "$domain" ]]; then
+    zenity --error --text "No domain entered."
+    exit 1
+    fi
+
+# Find lines containing the specified domain using grep
+    matching_lines=$(grep -F "$domain" /etc/hosts)
+
+# Check if any lines were found
+    if [[ -z "$matching_lines" ]]; then
+    zenity --info --text "The domain '$domain' was not found. Please verify your spelling."
+    exit 0
+    fi
+
+# Inform the user that the process may take some time
+    zenity --info --text "This process may take some time. Please be patient.\n" --timeout=2
+
+# Create a temporary copy of /etc/hosts
+    temp_hosts_file=$(mktemp)
+    cp -a /etc/hosts "$temp_hosts_file"
+
+# Delete the lines containing the domain from the temporary copy
+    while IFS= read -r line; do
+# Escape special characters in the line
+    escaped_line=$(echo "$line" | sed 's/[\/&]/\\&/g')
+    echo "Deleting line: ${line}" # Debugging line
+    sed -i "/$escaped_line/d" "$temp_hosts_file"
+    sed -i "/$escaped_line/d" "/usr/share/blocker/extra"
+    done <<< "$matching_lines"
+
+# Replace the original /etc/hosts file with the modified one
+    sudo cp -a "$temp_hosts_file" /etc/hosts
+
+# Inform the user of successful deletion
+    zenity --info --text "Lines containing the domain '$domain' have been removed. Try to access the website now." --timeout=4
+
+# Remove temporary files
+    rm "$temp_hosts_file"
+}
+
+# Function no blocked websites
 basic_host() {
     cat /usr/share/blocker/blank > /usr/share/blocker/hosts
     cp /usr/share/blocker/hosts /etc/
@@ -103,19 +149,21 @@ basic_host() {
 # Ask question on how to proceed
 cmd1="data_pull"
 cmd2="add_website"
-cmd3="basic_host"
-cmd4="exit"
+cmd3="remove_domain"
+cmd4="basic_host"
+cmd5="exit"
 
 # Define friendly names for the commands
 name1="    Launch The Savage Blocker"
 name2="    Add any website you want to block"
-name3="    Remove all website blocking"
-name4="    Exit and do not change"
+name3="    Remove a domain from the list"
+name4="    Remove all website blocking"
+name5="    Exit and do not change"
 
 # Intro - Use Zenity to create a radiolist dialog
 names=$(zenity --list --radiolist --title="Welcome to The Savage Spam Blocker: Your Ultimate Web Protection Tool!" --text="     This tool enhances your online experience by protecting your privacy, saving\n     you bandwidth, speeding up web browsing, and reducing online nuisances!" \
     --column="" --column="" \
-    TRUE "$name1" FALSE "$name2" FALSE "$name3" FALSE "$name4" --height=230 --width=530)
+    TRUE "$name1" FALSE "$name2" FALSE "$name3" FALSE "$name4" FALSE "$name5" --height=240 --width=530)
 
 # Execute the corresponding command for each selected name
 case "$names" in
@@ -137,5 +185,5 @@ case "$names" in
     "$name2") eval "$cmd2" ;;
     "$name3") eval "$cmd3" ;;
     "$name4") eval "$cmd4" ;;
+    "$name4") eval "$cmd5" ;;
 esac
-
