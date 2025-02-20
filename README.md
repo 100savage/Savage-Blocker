@@ -33,4 +33,3 @@ The types of websites include:
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
 
 The Savage Blocker is your ultimate web protection tool.
-
