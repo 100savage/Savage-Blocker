@@ -16,12 +16,10 @@ You can easily:
 - Remove all website blocking.
 - Exit without making any changes.
 
-This tool allows you to block websites by category. You can select or deselect any of the
-following categories.
-
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
 
-The types of websites include:
+This tool allows you to block websites by category. You can select or deselect any of the
+following categories. The types of websites include:
 
 - Ads and Malware websites
 - Ransomware websites
