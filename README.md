@@ -26,7 +26,7 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
-
+![Menu 3](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu3.png)
 
 ## Installation
 
