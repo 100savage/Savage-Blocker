@@ -1,35 +1,137 @@
-The Savage Blocker is more than just an ad-blocking tool for Debian like Linux systems.
- 
-This tool gathers a merged collection of malicious domain lists from various sources,
-including Steven Black, Malwaredomains, and other reputable sources. This tool
-enhances your online experience by protecting your privacy, saving you bandwidth,
-speeding up web browsing, and reducing online nuisances. With The Savage Blocker,
-you can surf the web without being distracted by ads or being tracked by advertisers.
-It also helps protect your privacy by blocking known malicious domains. While no tool
-can block all internet ads, we believe that The Savage Blocker makes your online experience
-a little bit better. 
+# The Savage Blocker
 
-You can easily:
+![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
+![Version: 1.2](https://img.shields.io/badge/Version-1.2-green.svg)
+![Platform: Debian/Ubuntu](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
 
-- Add any website of your choice to block. The malicious domain list may be insufficient for you.
-- Remove a blocked website from the list. You may need to access a reliable website that is blocked.
-- Remove all website blocking.
-- Exit without making any changes.
+The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Ubuntu) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.2 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
+
+## Features
+
+- **Block Websites by Category**:
+  - Ads and Malware
+  - Ransomware
+  - Tracking
+  - Pornography
+  - Gambling
+  - Social Media
+  - Bitcoin Miners
+- **Custom Blocking**: Add or remove specific domains.
+- **Reset Blocking**: Remove all blocks with one click.
+- **User-Friendly GUI**: Zenity-based menus for easy interaction.
+- **Safe File Management**: Preserves all files in `/usr/share/blocker`.
+- **Easy Installation**: Available as a `.deb` package.
+
+## Screenshots
+
 
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
-
-This tool allows you to block websites by category. You can select or deselect any of the
-following categories. 
-The types of websites include:
-
-- Ads and Malware websites
-- Ransomware websites
-- Tracking websites
-- Pornography websites
-- Gambling websites
-- Social Media websites
-- Prevent Bitcoin Miners from accessing your system
-
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
 
-The Savage Blocker is your ultimate web protection tool.
+
+## Installation
+
+### Option 1: Install via .deb Package (Recommended)
+1. **Download the Package**:
+   - Get `savage-blocker_1.2_all.deb` from [Releases](https://github.com/100savage/Savage-Blocker/releases).
+2. **Install**:
+   ```bash
+   sudo dpkg -i savage-blocker_1.2_all.deb
+   sudo apt-get install -f  # Resolve dependencies if needed
+   ```
+   The Savage Blocker app will appear in the "Internet section" of your menu
+  
+### Option 2: Manual Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/100savage/Savage-Blocker.git
+   cd Savage-Blocker
+   ```
+2. **Install Dependencies**:
+   ```bash
+   sudo apt-get update
+   sudo apt-get install zenity wget
+   ```
+3. **Set Up Files**:
+   ```bash
+   sudo mkdir -p /usr/share/blocker
+   sudo chmod -R u+w /usr/share/blocker
+   echo "127.0.0.1 localhost" | sudo tee /usr/share/blocker/blank
+   echo "# Hosts file header" | sudo tee /usr/share/blocker/header
+   sudo touch /usr/share/blocker/extra
+   ```
+4. **Make Executable**:
+   ```bash
+   chmod +x savage_blocker.sh
+   ```
+
+## Usage
+
+Run in a graphical session with `sudo -E` to preserve the display environment:
+```bash
+sudo -E savage_blocker.sh  # If installed manually
+sudo -E /usr/bin/savage_blocker.sh  # If installed via .deb
+```
+
+- **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
+- **Blocklist Selection**: Select categories to block.
+- **Debug Log**: View `/tmp/savage-blocker-$USER.log` for details.
+
+**Tip**: If dialogs don’t appear, set `$DISPLAY`:
+```bash
+export DISPLAY=:0
+sudo -E savage_blocker.sh
+```
+
+Run monthly to keep blocklists updated.
+
+## Changelog
+
+### Version 1.2 (October 2025)
+- **Fixed Permissions**: Uses `/tmp/savage-blocker-$USER.log` to avoid log file conflicts.
+- **Improved Zenity Detection**: Explicit `/usr/bin/zenity` check for reliability.
+- **Prevented Terminal Closure**: `basic_host` keeps the terminal open on errors.
+- **Better Display Handling**: Validates `$DISPLAY=:0` for consistent GUI performance.
+- **Preserved Files**: No deletion in `/usr/share/blocker`, using `/tmp` for temporary files.
+- **Enhanced Logging**: Detailed logs and clear error messages.
+- **New .deb Package**: Simplifies installation with dependencies and file setup.
+
+See [CHANGELOG.md](CHANGELOG.md) for details.
+
+## Blocklist Sources
+
+- [StevenBlack Hosts](https://github.com/StevenBlack/hosts)
+- [Blocklist Project](https://blocklistproject.github.io/Lists)
+- [NoCoin Adblock List](https://github.com/hoshsadiq/adblock-nocoin-list)
+- [Anti-WebMiner](https://github.com/greatis/Anti-WebMiner)
+
+## Contributing
+
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a branch (`git checkout -b feature-name`).
+3. Commit changes (`git commit -m "Add feature"`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
+
+Report issues via [Issues](https://github.com/100savage/Savage-Blocker/issues). See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Licensed under the [GNU General Public License v2.0](LICENSE).
+
+## Support
+
+For issues, check `/tmp/savage-blocker-$USER.log` or run:
+```bash
+sudo -E savage_blocker.sh 2>&1 | tee /tmp/savage-blocker-output.log
+```
+
+© 2025 100savage
+
+
+
+
+
+
+
