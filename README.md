@@ -33,7 +33,7 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Ubun
 
 ### Option 1: Install via .deb Package (Recommended)
 1. **Download the Package**:
-   - Get `savage-blocker_1.2_all.deb` from [Releases](https://github.com/100savage/Savage-Blocker/blob/main/savage_blocker_1.1_all.deb).
+   - Get `savage-blocker_1.2_all.deb` from [Releases](https://github.com/100savage/Savage-Blocker/savage_blocker_1.1_all.deb).
 2. **Install**:
    ```bash
    sudo dpkg -i savage-blocker_1.2_all.deb
