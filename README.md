@@ -1,6 +1,6 @@
 # The Savage Blocker
 
-![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Version: 1.2](https://img.shields.io/badge/Version-1.2-green.svg)
 ![Platform: Debian/Ubuntu](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
 
