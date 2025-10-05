@@ -4,7 +4,7 @@
 ![Version: 1.2](https://img.shields.io/badge/Version-1.2-green.svg)
 ![Platform: Debian/Ubuntu](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
 
-The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Ubuntu) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.2 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
+The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debian/Ubuntu/Linux Mint) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.2 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
 
 ## Features
 
@@ -64,23 +64,19 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Ubun
    chmod +x savage_blocker.sh
    ```
 
-## Usage
-
-Run in a graphical session with `sudo -E` to preserve the display environment:
+## If using a terminal
 ```bash
 sudo -E savage_blocker.sh  # If installed manually
-sudo -E /usr/bin/savage_blocker.sh  # If installed via .deb
 ```
+## If installed via .deb package 
+select Menu -> Internet -> Savage Blocker 
 
+## Run the code
 - **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
 - **Blocklist Selection**: Select categories to block.
 - **Debug Log**: View `/tmp/savage-blocker-$USER.log` for details.
 
-**Tip**: If dialogs don’t appear, set `$DISPLAY`:
-```bash
-export DISPLAY=:0
-sudo -E savage_blocker.sh
-```
+**Tip**: If dialogs don’t appear, verify Zenity is installed and check the /tmp/savage-blocker.log for errors
 
 Run monthly to keep blocklists updated.
 
@@ -94,8 +90,6 @@ Run monthly to keep blocklists updated.
 - **Preserved Files**: No deletion in `/usr/share/blocker`, using `/tmp` for temporary files.
 - **Enhanced Logging**: Detailed logs and clear error messages.
 - **New .deb Package**: Simplifies installation with dependencies and file setup.
-
-See [CHANGELOG.md](CHANGELOG.md) for details.
 
 ## Blocklist Sources
 
@@ -117,7 +111,7 @@ Report issues via [Issues](https://github.com/100savage/Savage-Blocker/issues). 
 
 ## License
 
-Licensed under the [GNU General Public License v2.0](LICENSE).
+Licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Support
 
