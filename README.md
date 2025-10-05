@@ -23,7 +23,6 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 
 ## Screenshots
 
-
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
 ![Menu 3](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu3.png)
@@ -70,6 +69,7 @@ sudo -E savage_blocker.sh  # If installed manually
 ```
 ## If installed via .deb package 
 select Menu -> Internet -> Savage Blocker 
+![Menu 4](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu4.png)
 
 ## Run the code
 - **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
