@@ -83,13 +83,15 @@ Run monthly to keep blocklists updated.
 ## Changelog
 
 ### Version 1.2 (October 2025)
-- **Fixed Permissions**: Uses `/tmp/savage-blocker-$USER.log` to avoid log file conflicts.
 - **Improved Zenity Detection**: Explicit `/usr/bin/zenity` check for reliability.
-- **Prevented Terminal Closure**: `basic_host` keeps the terminal open on errors.
 - **Better Display Handling**: Validates `$DISPLAY=:0` for consistent GUI performance.
 - **Preserved Files**: No deletion in `/usr/share/blocker`, using `/tmp` for temporary files.
-- **Enhanced Logging**: Detailed logs and clear error messages.
+- **Enhanced Logging**: Detailed logs and clear error messages. /tmp/savage-blocker.log
 - **New .deb Package**: Simplifies installation with dependencies and file setup.
+- **Remove duplicate entries**: Eliminates redundant domains from overlapping blocklist sources for a cleaner `/etc/hosts` file.
+- **Sort entries**: Sorts blocked domains alphabetically in `/etc/hosts` for easier navigation.
+- **Add timestamp to hosts file**: Includes the date of the last run as a comment in `/etc/hosts` for tracking updates.
+- **Updated license to GNU GPL v3.0**
 
 ## Blocklist Sources
 
