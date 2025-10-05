@@ -36,7 +36,4 @@ Thank you for considering contributing to The Savage Blocker, an ad-blocking too
 ## Code of Conduct
 We follow the Contributor Covenant Code of Conduct. Harassment-free participation is expected. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
 
-## Security
-Report vulnerabilities privately via [SECURITY.md](SECURITY.md).
-
 Contributions are licensed under GPL-3.0. Thank you for helping improve The Savage Blocker!
