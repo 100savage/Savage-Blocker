@@ -71,9 +71,10 @@ sudo -E savage_blocker.sh  # If installed manually
 From your start Menu select Internet then select the Savage Blocker icon     
 <img src="https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu4.png" width="50">
 ## Run the code
-- **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
-- **Blocklist Selection**: Select categories to block.
-- **Debug Log**: View `/tmp/savage-blocker-$USER.log` for details.
+- **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit. See the first screenshot
+- **Blocklist Selection**: Select categories to block. See the second screenshot
+- **Downloading** See the third screenshot
+- **Debug Log**: View `/tmp/savage-blocker.log` for details.
 
 **Tip**: If dialogs don’t appear, verify Zenity is installed and check the /tmp/savage-blocker.log for errors
 
@@ -84,7 +85,6 @@ Run monthly to keep blocklists updated.
 ### Version 1.2 (October 2025)
 - **Improved Zenity Detection**: Explicit `/usr/bin/zenity` check for reliability.
 - **Better Display Handling**: Validates `$DISPLAY=:0` for consistent GUI performance.
-- **Preserved Files**: No deletion in `/usr/share/blocker`, using `/tmp` for temporary files.
 - **Enhanced Logging**: Detailed logs and clear error messages. /tmp/savage-blocker.log
 - **New .deb Package**: Simplifies installation with dependencies and file setup.
 - **Remove duplicate entries**: Eliminates redundant domains from overlapping blocklist sources for a cleaner `/etc/hosts` file.
