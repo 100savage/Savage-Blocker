@@ -19,7 +19,6 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Ubun
 - **Custom Blocking**: Add or remove specific domains.
 - **Reset Blocking**: Remove all blocks with one click.
 - **User-Friendly GUI**: Zenity-based menus for easy interaction.
-- **Safe File Management**: Preserves all files in `/usr/share/blocker`.
 - **Easy Installation**: Available as a `.deb` package.
 
 ## Screenshots
