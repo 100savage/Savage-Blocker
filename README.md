@@ -16,7 +16,7 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
   - Gambling
   - Social Media
   - Bitcoin Miners
-  - 
+    
 - **Custom Blocking**: Add or remove specific domains.
 - **Reset Blocking**: Remove all blocks with one click.
 - **User-Friendly GUI**: Zenity-based menus for easy interaction.
