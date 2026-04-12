@@ -1,10 +1,10 @@
 # The Savage Blocker
 
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Version: 1.2](https://img.shields.io/badge/Version-1.2-green.svg)
+![Version: 1.3](https://img.shields.io/badge/Version-1.3-green.svg)
 ![Platform: Debian/Ubuntu](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
 
-The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debian/Ubuntu/Linux Mint) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.2 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
+The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debian/Ubuntu/Linux Mint) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.3 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
 
 ## Features
 
@@ -31,10 +31,10 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 
 ### Option 1: Install via .deb Package (Recommended)
 1. **Download the Package**:
-   - Get `savage-blocker_1.2_all.deb` from [Releases](https://github.com/100savage/Savage-Blocker/blob/main/savage_blocker_1.2_all.deb).
+   - Get `savage-blocker_1.3_all.deb` from [Releases](https://github.com/100savage/Savage-Blocker/blob/main/savage_blocker_1.3_all.deb).
 2. **Install**:
    ```bash
-   sudo dpkg -i savage-blocker_1.2_all.deb
+   sudo dpkg -i savage-blocker_1.3_all.deb
    sudo apt-get install -f  # Resolve dependencies if needed
    ```
    The Savage Blocker app will appear in the "Internet section" of your menu
@@ -81,6 +81,11 @@ From your start Menu select Internet then select the Savage Blocker icon
 Run monthly to keep blocklists updated.
 
 ## Changelog
+
+### Version 1.3 (April 2026)
+- **New .deb Package**: Simplifies installation with dependencies and file setup.
+- **Improved Timestamp**: Enhanced date format in `/etc/hosts` for better tracking of updates.
+- **Improved Code**: Enhanced speed and stability.
 
 ### Version 1.2 (October 2025)
 - **Improved Zenity Detection**: Explicit `/usr/bin/zenity` check for reliability.
