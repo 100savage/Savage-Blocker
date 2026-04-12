@@ -2,7 +2,7 @@
 
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Version: 1.3](https://img.shields.io/badge/Version-1.3-green.svg)
-![Platform: Debian/Ubuntu](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
+![Platform: Debian/Ubuntu/Linux Mint](https://img.shields.io/badge/Platform-Debian%2FUbuntu-orange.svg)
 
 The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debian/Ubuntu/Linux Mint) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing. Version 1.3 introduces significant reliability improvements, and a new `.deb` package simplifies installation.
 
