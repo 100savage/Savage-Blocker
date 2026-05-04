@@ -23,6 +23,8 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 - **Easy Installation**: Available as a `.deb` package.
 
 ## Screenshots
+- The styling of the below information boxes is controlled by your active system theme settings.
+- This means the colors, borders, and overall style will automatically adjust to match your device’s theme settings.
 
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
