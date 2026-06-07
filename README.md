@@ -75,10 +75,9 @@ sudo ./usr/bin/blocker.sh  # Launcher from manual install
 Or launch from your start menu: Internet → Savage Blocker.
 
 ### Screenshots
-- **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
+- **Main Menu Dark Mode**: Choose to launch, add/remove websites, reset blocking, or exit.
+- **Main Menu Light Mode**: Choose to launch, add/remove websites, reset blocking, or exit.
 - **Blocklist Selection**: Select categories to block.
-- **Downloading**: Real-time progress during updates.
-- **Debug Log**: View `/tmp/savage-blocker.log` for details.
 
 **Tip**: Run monthly to keep blocklists updated.
 
