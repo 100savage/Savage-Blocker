@@ -69,27 +69,6 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
    ```bash
    sudo ./usr/bin/blocker.sh
    ```
-
-### Option 4: Manual Installation (Bash 1.3)
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/100savage/Savage-Blocker.git
-   cd Savage-Blocker
-   ```
-2. **Install Dependencies**:
-   ```bash
-   sudo apt-get update
-   sudo apt-get install zenity wget
-   ```
-3. **Set Up Files**:
-   ```bash
-   sudo mkdir -p /usr/share/blocker
-   sudo chmod -R u+w /usr/share/blocker
-   echo "127.0.0.1 localhost" | sudo tee /usr/share/blocker/blank
-   echo "# Hosts file header" | sudo tee /usr/share/blocker/header
-   sudo touch /usr/share/blocker/extra
-   ```
 4. **Make Executable**:
    ```bash
    chmod +x usr/bin/blocker.sh
@@ -102,11 +81,6 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 sudo ./usr/bin/blocker.sh  # Launcher from manual install
 ```
 Or launch from your start menu: Internet → Savage Blocker.
-
-### If using the Bash Zenity GUI (v1.3)
-```bash
-sudo -E usr/bin/blocker.sh  # From manual install
-```
 
 ### Screenshots
 - **Main Menu**: Choose to launch, add/remove websites, reset blocking, or exit.
