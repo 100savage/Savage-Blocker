@@ -1,0 +1,17 @@
+Package: savage-blocker
+Version: 2.0
+Architecture: all
+Essential: no
+Priority: optional
+Section: web
+Depends: python3,python3-tk
+Maintainer: Mike Savage
+Homepage: https://github.com/100savage/Savage-Blocker
+Description: The Savage Blocker is more than just an ad-blocking tool.
+ It is a privacy and security tool to block unwanted websites
+ The Savage Blocker enhances privacy and security on Debian-based systems
+ by blocking ads, malware, ransomware, tracking, and other unwanted
+ websites using curated blocklists from StevenBlack, Blocklist Project,
+ and others. With a user-friendly python3 GUI, it supports custom domain
+ blocking and easy reset. Version 2.0 uses python3, improves reliability, 
+ and includes this .deb package for simple installation.

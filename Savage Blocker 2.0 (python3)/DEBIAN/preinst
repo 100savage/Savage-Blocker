@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#removes old versions of the Savage Blocker
+
+if [ -f "/usr/share/blocker" ]; then
+        sudo rm -rf /usr/share/blocker
+        echo "Removed old extra blocker files"
+fi
+
+if [ -f "/usr/bin/blocker.sh" ]; then
+        sudo rm -rf /usr/bin/blocker.sh
+        echo "Removed old blocker script"
+fi
+
+if [ -f "/usr/share/applications/blocker" ]; then
+        sudo rm -f /usr/share/applications/blocker
+        echo "Removed old menu item"
+fi
+
+if [ -f "/usr/share/icons/blocker" ]; then
+        sudo rm -f /usr/share/icons/blocker
+        echo "Removed old icon"
+fi
