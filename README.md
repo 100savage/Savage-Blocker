@@ -43,17 +43,7 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
    ```
    The Savage Blocker app will appear in the "Internet section" of your menu.
 
-### Option 2: Install Bash 1.3 via .deb Package
-
-1. **Download the Package**:
-   - Get `savage-blocker_1.3_all.deb` from the [repository](https://github.com/100savage/Savage-Blocker/blob/main/savage_blocker_1.3_all.deb).
-2. **Install**:
-   ```bash
-   sudo dpkg -i savage-blocker_1.3_all.deb
-   sudo apt-get install -f  # Resolve dependencies if needed
-   ```
-
-### Option 3: Manual Installation (Python 2.0)
+### Option 2: Manual Installation (Python 2.0)
 
 1. **Clone the Repository**:
    ```bash
