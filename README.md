@@ -6,7 +6,7 @@
 
 The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debian/Ubuntu/Linux Mint) that blocks unwanted websites, including ads, malware, ransomware, tracking, pornography, gambling, social media, and Bitcoin miners. By updating `/etc/hosts` with curated blocklists, it enhances privacy, reduces distractions, saves bandwidth, and speeds up web browsing.
 
-**Version 2.0** introduces a native Python 3 GUI with a modern dark/light theme, threaded downloads, real-time progress, a built-in log viewer, and improved reliability — alongside the original bash/Zenity version.
+**Version 2.0** introduces a native Python 3 GUI with a modern dark/light theme, threaded downloads, real-time progress, a built-in log viewer, and improved reliability.
 
 ## Features
 
@@ -27,7 +27,9 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 ## Screenshots
 
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
+
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
+
 <img src="https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu3.png" width="550">
 
 ## Installation
