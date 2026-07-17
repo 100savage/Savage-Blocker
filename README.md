@@ -33,10 +33,12 @@ The Savage Blocker is a powerful tool for Debian-based Linux systems (e.g., Debi
 - **CLI Mode**: Full command-line interface for headless or scripted use.
 - **Easy Installation**: Available as a `.deb` package.
 
-## Screenshots
+## Screenshot Main Menu Dark Mode
+
 
 ![Menu 1](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu1.png)
 
+## Screenshot Main Menu Light mode
 
 ![Menu 2](https://raw.githubusercontent.com/100savage/Savage-Blocker/main/images/menu2.png)
 
